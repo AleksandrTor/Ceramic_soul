@@ -10,3 +10,24 @@
     text-transform: uppercase;
     text-align: center;
 }
+
+@mixin button {
+    display: block;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid v.$dark;
+    text-align: center;
+    color: v.$dark;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@mixin text {
+    color: v.$dark;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,7 @@
+@use "/src/sass/base/variables.scss"as v;
+@use "/src/sass/base/mixins.scss"as *;
+
+.about__text {
+    @include text;
+    margin-block-start: 20px;
+}
