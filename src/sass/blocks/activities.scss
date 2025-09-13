@@ -1,17 +1,17 @@
 @use "/src/sass/base/variables.scss"as v;
 
-.about {
+.activities {
     margin-top: 60px;
 
     // &__title__h2 {
 
     // }
 
-    &__title__h3 {
+    &__title__store {
         margin-block-start: 60px;
     }
 
-    &__img {
+    &__store__img {
         margin: 40px auto 0 auto;
         width: 340px;
         height: 194px;
@@ -21,5 +21,17 @@
     span {
         color: v.$ceramic;
         font-weight: 500;
+    }
+
+    &__title__ceramic {
+        margin-block-start: 40px;
+
+    }
+
+    &__ceramics__img {
+        margin: 40px auto 0 auto;
+        width: 340px;
+        height: 128px;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
     }
 }

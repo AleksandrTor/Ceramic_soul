@@ -8,14 +8,21 @@
     font-weight: 400;
 }
 
-.title-h2 {
+.title-h2-store {
     @include title;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
 }
 
-.title-h3 {
+.title-h3-store {
+    @include title;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.title-h3-ceramic {
     @include title;
     font-size: 20px;
     font-style: normal;

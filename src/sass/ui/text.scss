@@ -1,7 +1,13 @@
 @use "/src/sass/base/variables.scss"as v;
 @use "/src/sass/base/mixins.scss"as *;
 
-.about__text {
+.activities__store__text {
+    @include text;
+    margin-block-start: 20px;
+    text-align: left;
+}
+
+.activities__ceramic__text {
     @include text;
     margin-block-start: 20px;
 }
