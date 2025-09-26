@@ -1,21 +1,25 @@
 @use "/src/sass/base/variables.scss"as v;
 
 .activities {
-    margin-top: 60px;
+    padding-top: 60px;
 
-    // &__title__h2 {
-
-    // }
-
-    &__title__store {
-        margin-block-start: 60px;
+    &__wrapper {
+        margin-top: 60px;
     }
 
-    &__store__img {
-        margin: 40px auto 0 auto;
-        width: 340px;
-        height: 194px;
+    &__img {
+        width: 100%;
+        margin-top: 40px;
         box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__text {
+        margin: 20px 0 40px 0;
+        color: v.$dark;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     span {
@@ -23,15 +27,68 @@
         font-weight: 500;
     }
 
-    &__title__ceramic {
-        margin-block-start: 40px;
-
-    }
-
     &__ceramics__img {
         margin: 40px auto 0 auto;
         width: 340px;
         height: 128px;
         box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .activities {
+        padding: 60px 95px 0 95px;
+
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+        &__text {
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px
+        }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .activities {
+        &__col {
+            padding: 0 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .activities {
+        padding: 60px;
+
+        &__wrapper {
+            margin-top: 30px;
+        }
+
+        &__col {
+            padding: 0 10px;
+        }
+
+        &__img {
+            margin-top: 60px;
+        }
+
+        &__text {
+            &_fixed {
+                inline-size: 556px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .activities {
+        padding-top: 100px;
     }
 }
