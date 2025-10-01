@@ -89,7 +89,40 @@
     &__btn {
         margin-top: 20px;
     }
+
+    &__vase {
+        display: none;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .touch {
+
+        &__wrapper {
+            padding-inline: 24px;
+            position: relative;
+        }
+
+        &__input {
+            width: 45%;
+        }
+
+        &__textarea {
+            width: 45%;
+        }
+
+        &__vase {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+
+    }
+}
+
+
 
 @media screen and (min-width: 1200px) {
     .touch {

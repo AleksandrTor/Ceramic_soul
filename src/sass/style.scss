@@ -10,6 +10,16 @@
 @use "/src/sass/blocks/promo.scss";
 @use "/src/sass/blocks/header.scss";
 @use "/src/sass/blocks/activities.scss";
+@use "/src/sass/blocks/touch.scss";
+
+@media screen and (min-width: 75em) {
+
+    .pure-u-xl-1-2,
+    .pure-u-xl-12-24 {
+        width: 50%;
+    }
+}
+
 
 // .pure-g {
 //     text-align: center;

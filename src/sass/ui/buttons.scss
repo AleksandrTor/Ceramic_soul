@@ -5,11 +5,28 @@
     @include button;
     width: 230px;
     height: 50px;
-    font-style: 20px;
+    font-size: 20px;
+}
+
+.btn-send {
+    @include button;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+
+    &:focus {
+        outline: 1px solid v.$ceramic;
+        border: 1px solid v.$ceramic;
+    }
+
+    &:disabled {
+        color: v.$ui-disabled;
+        border: 1px solid v.$ui-disabled;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .btn--default {
+    .btn-default {
         &:hover {
             background-color: v.$dark;
             color: v.$light;
@@ -22,7 +39,20 @@
             border: none;
         }
     }
+
+    .btn-send {
+        &:active {
+            outline: 1px solid v.$ceramic;
+            border: 1px solid v.$ceramic;
+        }
+
+        &:hover {
+            color: v.$ceramic;
+            border: 1px solid v.$ceramic;
+        }
+    }
 }
+
 
 @media screen and (min-width: 1920px) {
     .btn--default {
