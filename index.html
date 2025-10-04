@@ -96,11 +96,10 @@
 			<div class="pure-g touch__wrapper">
 				<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-2-5">
 					<img class="touch__img" src="/src/img/form/tea.jpg" alt="tea">
-					<img class=" touch__vase" src="/src/img/form/vase.png" alt="vase">
+					<img class="touch__vase" src="/src/img/form/vase.png" alt="vase">
 				</div>
 				<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5">
-
-					<form action="#">
+					<form class="touch__form" action="#">
 						<fieldset class="touch__fieldset">
 							<div class="touch__input-block">
 								<label class="touch__label" for="name">Name</label>
@@ -108,9 +107,9 @@
 									required />
 							</div>
 							<div class="touch__input-block">
-								<label class="touch__label" for="email">Email</label>
-								<input class="touch__input" type="email" id="email" name="email" placeholder="Email"
-									required />
+								<label class="touch__label touch__label__email" for="email">Email</label>
+								<input class="touch__input touch__input__email" type="email" id="email" name="email"
+									placeholder="Email" required />
 							</div>
 						</fieldset>
 						<label class="touch__label" for="question">Your question</label>
@@ -120,9 +119,44 @@
 							<input class="touch__checkbox" type="checkbox" id="checkbox" required />
 							I agree with the <a href="#">terms</a></label>
 						<button class="btn-send touch__btn">send request</button>
+
 					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="works">
+		<div class="container">
+			<h2 class="title-h2">check out our works</h2>
+
+			<div class="works__wrapper">
+				<!-- Slider main container -->
+				<div class="swiper works__slider">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<img src="/src/img/works/tea-1.jpg" alt="tea-1">
+						</div>
+						<div class="swiper-slide">
+							<img src="/src/img/works/tea-2.jpg" alt="tea-2">
+						</div>
+						<div class="swiper-slide">
+							<img src="/src/img/works/tea-3.jpg" alt="tea-3">
+						</div>
+						<div class="swiper-slide">
+							<img src="/src/img/works/tea-2.jpg" alt="tea-2">
+						</div>
+					</div>
+					<!-- If we need pagination -->
 
 				</div>
+
+				<div class="swiper-pagination"></div>
+				<button class="icon-left-open works_slider-nav"></button>
+				<button class="icon-right-open works_slider-nav"></button>
 			</div>
 		</div>
 	</section>
