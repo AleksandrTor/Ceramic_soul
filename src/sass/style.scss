@@ -1,4 +1,6 @@
 @use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/node_modules/purecss/build/grids-min.css";
+@use "/src/sass/libs/node_modules/purecss/build/grids-responsive-min.css";
 @use "/src/sass/libs/fontello.css";
 
 @use "/src/sass/base/variables.scss"as v;
@@ -14,6 +16,9 @@
 @use "/src/sass/blocks/works.scss";
 @use "/src/sass/blocks/catalog.scss";
 @use "/src/sass/blocks/footer.scss";
+@use "/src/sass/blocks/blog.scss";
+
+
 
 
 // .pure-g {

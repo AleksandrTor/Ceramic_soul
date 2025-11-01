@@ -29,6 +29,7 @@
     @include button;
     width: 90px;
     height: 40px;
+    font-size: 16px;
     border-radius: 2px;
     border: 1px solid v.$light;
     color: v.$light;
@@ -36,6 +37,18 @@
     &:disabled {
         color: v.$ui-disabled;
         border: 1px solid v.$ui-disabled;
+    }
+}
+
+.btn-raed {
+    @include button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+
+    &:focus {
+        outline: 1px solid v.$ceramic;
+        border: 1px solid v.$ceramic;
     }
 }
 
@@ -55,6 +68,18 @@
     }
 
     .btn-send {
+        &:active {
+            outline: 1px solid v.$ceramic;
+            border: 1px solid v.$ceramic;
+        }
+
+        &:hover {
+            color: v.$ceramic;
+            border: 1px solid v.$ceramic;
+        }
+    }
+
+    .btn-raed {
         &:active {
             outline: 1px solid v.$ceramic;
             border: 1px solid v.$ceramic;
